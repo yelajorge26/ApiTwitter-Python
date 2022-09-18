@@ -1,0 +1,20 @@
+#cabecera {
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(86,9,121,1) 41%, rgba(0,233,255,1) 100%);
+    padding: 10px;
+}
+#enlace-home, #enlace-trash {
+    padding: 0px;
+}
+#home-icon {
+    margin-left: 1%;
+    margin-top: 1px;
+    margin-bottom: 1px;
+}
+#trash-icon {
+    margin-left: 96%;
+    margin-top: -45px;
+}
+#tabla-tweets {
+    padding: 20px;
+}

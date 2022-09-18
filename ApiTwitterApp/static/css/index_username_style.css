@@ -1,0 +1,91 @@
+body{
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(86,9,121,1) 41%, rgba(0,233,255,1) 100%);
+}
+#cabecera {
+    padding: 10px;
+}
+#my-title {
+    color: white;
+    margin-left: 80px;
+    margin-top: -40px;
+}
+#card_principal {
+    background-color: white;
+    border-radius: 10px;
+    padding-top: 30px;
+    padding-bottom: 40px;
+    margin-top: 175px;
+    margin-right: 575px;
+    margin-left: 580px;
+}
+#mi_title_card{
+    margin-left: 50px;
+}
+#hospitales{
+    border: 1px solid black;
+    border-radius: 10px;
+    background: transparent;
+    font-size: 14px;
+    height: 30px;
+    padding: 5px;
+    width: 285px;
+    text-align: center;
+    margin-bottom: 10px;
+    margin-left: 50px;
+}
+#username, #key_word{
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: transparent;
+    font-size: 14px;
+    height: 30px;
+    padding: 5px;
+    width: 285px;
+    text-align: center;
+    margin-left: 50px;
+    margin-bottom: 20px;
+}
+#cantidad{
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: transparent;
+    font-size: 14px;
+    height: 30px;
+    padding: 5px;
+    width: 285px;
+    text-align: center;
+    margin-left: 50px;
+    margin-bottom: 20px;
+}
+#enviar{
+    border: 1px solid white;
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(86,9,121,1) 41%, rgba(0,233,255,1) 100%);
+    color: white;
+    border-radius: 10px;
+    font-size: 14px;
+    height: 30px;
+    padding: 5px;
+    width: 285px;
+    text-align: center;
+    margin-left: 50px;
+    transition-duration: 0.5s;
+    cursor: pointer;
+}
+#enviar:hover{
+    border: 1px solid black;
+    background: white;
+    color: black;
+}
+#lbl_hospital{
+    margin-left: 50px;
+    margin-bottom: 10px;
+}
+#lbl_username{
+    margin-left: 50px;
+    margin-bottom: 10px;
+}
+#lbl_cantidad{
+    margin-left: 50px;
+    margin-bottom: 10px;
+}

@@ -1,0 +1,57 @@
+body{
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(86,9,121,1) 41%, rgba(0,233,255,1) 100%);
+}
+#formulario{
+    background-color: white;
+    border-radius: 10px;
+    padding-top: 30px;
+    padding-bottom: 40px;
+    margin-top: 50px;
+    margin-right: 575px;
+    margin-left: 580px;
+}
+#title_register{
+    text-align: center;
+    margin-top: -10px;
+}
+#lblLogin{
+    text-align: center;
+    margin-bottom: 1px;
+}
+#lblNombre, #lblApellido, #lblCorreo, #lblContrasena, #lblPregunta{
+    text-align: center;
+}
+#nombre, #apellido, #correo, #contrasena{
+    border-radius: 10px;
+    background-color: transparent;
+    font-size: 14px;
+    height: 25px;
+    padding: 5px;
+    width: 300px;
+    text-align: center;
+    margin-left: 25px;
+}
+
+#btnAceptar, #btnSesion{
+    border: 1px solid white;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(86,9,121,1) 41%, rgba(0,233,255,1) 100%);
+    color: white;
+    border-radius: 10px;
+    font-size: 14px;
+    height: 30px;
+    padding: 5px;
+    width: 315px;
+    text-align: center;
+    margin-left: 25px;
+    margin-top: 20px;
+    margin-bottom: -10px;
+    transition-duration: 0.5s;
+    cursor: pointer;
+}
+#btnAceptar:hover, #btnSesion:hover{
+    border: 1px solid black;
+    background: white;
+    color: black;
+}

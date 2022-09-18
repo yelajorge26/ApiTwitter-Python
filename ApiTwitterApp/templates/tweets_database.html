@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/tweets_db_style.css' %}" >
+    <link rel="stylesheet" href="{% static 'open-iconic-master/font/css/open-iconic-bootstrap.css' %}">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.19/css/dataTables.bootstrap4.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.19/js/dataTables.bootstrap4.min.js"></script>
+    <title>Tweets Data Base</title>
+</head>
+<body>
+    <header id="cabecera">
+        <button id="home-icon" type="button" class="btn btn-light">
+            <a id="enlace-home" class="dropdown-item" href="index">
+                <span class="oi oi-home"></span>
+            </a>
+        </button>
+        <button id="trash-icon" type="button" class="btn btn-light">
+            <a id="enlace-trash" class="dropdown-item" href="all_delete_database">
+                <span class="oi oi-trash"></span>
+            </a>
+        </button>
+        <button id="export-icon" type="button" class="btn btn-light">
+            <a id="enlace-export" class="dropdown-item" href="export_to_csv">
+                <span class="oi oi-data-transfer-download"></span>
+            </a>
+        </button>
+    </header>
+    <section id="tabla-tweets">
+        <table id="example" class="table table-striped table-bordered" style="width: 100%;">
+            <thead>
+                <tr>
+                    <td>Comentario</td>
+                </tr>
+            </thead>
+            <tbody>
+                {% if tweets %}
+                {% for tweet in tweets %}
+                <tr>
+                    <td>{{tweet}}</td>
+                </tr>
+                {% endfor %}
+                {% endif %}
+            </tbody>    
+        </table>
+    </section>
+</body>
+<script>
+    $(document).ready(function() {
+        $('#example').DataTable();
+    });
+</script>
+</html>
